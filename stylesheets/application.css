@@ -1,14 +1,21 @@
 /**
- * Redpenny stylesheet
+ * Silpion Stylsheet
+ * Based on Redpenny stylesheet
  *
- * Author: Jarod Denison (@jaroslavius)
+ * Original Author: Jarod Denison (@jaroslavius)
  * @2013-05-25
  *
  */
 
 
-@import "http://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Code+Pro";
 @import "../../../stylesheets/application.css";
+
+@font-face {
+	font-family: "DINRoundPro-Medium";
+	font-style: normal;
+	font-weight: normal;
+	src: local("DINRoundPro-Medium"), url("font/DINRoundPro-Medium.woff") format("woff"), url("font/DINRoundPro-Medium.ttf") format("truetype"), url("font/DINRoundPro-Medium.svg") format("svg");
+}
 
 @font-face {
   font-family: 'FontAwesome';
@@ -18,18 +25,10 @@
   font-style: normal;
 }
 
-body
-{
-	padding-top:90px;
-	background-image:url(images/bg/bg.gif);
-	background-repeat:repeat-x;
-	background-position:center top
-}
-
 body,#wrapper
 {
 	background-color:#eee;
-	font-family:Helvetica,Arial,"Lucida Grande",verdana,sans-serif
+	font-family:DINRoundPro-Medium,Helvetica,Arial,"Lucida Grande",verdana,sans-serif
 }
 
 a
@@ -38,6 +37,11 @@ a
 	-moz-transition:all .2s linear;
 	-o-transition:all .2s linear;
 	-webkit-transition:all .2s linear
+}
+
+a,a:link,a:visited
+{
+	color:#6f8b5f
 }
 
 .action-settings #header h1:before
@@ -243,7 +247,7 @@ ul.projects li.root
 	background-image: -webkit-gradient(linear,0 0,0 100%,from(#222),to(#111));
 	background-image: -webkit-linear-gradient(top,#222,#111);
 	background-image: -o-linear-gradient(top,#222,#111);
-	background-image: linear-gradient(to bottom,#222,#111);
+	background-image: linear-gradient(to bottom,#314031,#476A4E);
 	background-repeat: repeat-x;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff111111',GradientType=0);
 	border-color: #252525;
@@ -262,7 +266,7 @@ ul.projects li.root
 
 #top-menu
 {
-	background-color:#000;
+	background-color:#224022;
 	font-size:10px;
 	position:relative;
 	padding:0;
@@ -284,7 +288,7 @@ ul.projects li.root
 
 #top-menu li a
 {
-	color:#999;
+	color:#b6bc00;
 	font-weight:600;
 	padding:4px 5px
 }
@@ -331,7 +335,7 @@ ul.projects li.root
 {
 	width:26%;
 	background:url(images/logo.png) no-repeat center top;
-	padding-top:80px
+	padding-top:50px
 }
 
 #sidebar a,#sidebar a.selected
@@ -380,13 +384,8 @@ ul.projects li.root
 
 #footer .bgr:after
 {
-	content:' Theme by Jared Denison (themondays)';
+	/*content:' Theme by Jared Denison (themondays)';*/
 	float:right
-}
-
-h1,h2,h3,h4
-{
-	font-family:"PT Sans","Lucida Grande",arial,sans-serif
 }
 
 h1
@@ -405,17 +404,25 @@ h2,h3,h4,.wiki h1,.wiki h2,.wiki h3
 
 h2,.wiki h1
 {
-	background-color:#e0e0e0;
+	background-color:#224022;
 	margin:-6px -10px 10px;
 	padding:10px 20px;
 	font-size:14px;
-	color:#000;
+	color:#b6bc00;
 	border-top:1px #ddd solid
+}
+.contextual a,.contextual a:link,.contextual a:visited
+{
+	color:#b6bc00;
+}
+.contextual a:hover
+{
+	color:#fff;
+	text-decoration:none;
 }
 
 .wiki h1
 {
-	font-family:"PT Sans","Trebuchet MS",Helvetica,sans-serif;
 	font-weight:700
 }
 
@@ -442,7 +449,9 @@ div.wiki h3,div.wiki h4
 #sidebar h3
 {
 	border-bottom:1px solid #DCDCDC;
-	padding:6px 8px
+	padding:6px 8px;
+	color:#666;
+	font-weight:bold;
 }
 
 div.journal h4
@@ -473,26 +482,26 @@ div.splitcontentleft h2
 
 #main-menu li a
 {
-	font-family: "PT Sans", Helvetica, Arial;
 	transition:all .4s linear;
 	-moz-transition:all .4s linear;
 	-o-transition:all .4s linear;
 	-webkit-transition:all .4s linear;
-	background-color:#666;
+	color:#b6bc00;
+	background-color:#224022;
 	font-weight:400;
 	padding:4px 8px 4px
 }
 
 #main-menu li a:hover
 {
-	background:#999;
+	background:#6f8b5f;
 	text-decoration:none
 }
 
 #main-menu li a.selected,#main-menu li a.selected:hover
 {
 	background-color:#EEE;
-	color:#111;
+	color:#666;
 	font-weight:700
 }
 #top-menu li a.home:before {
@@ -743,7 +752,6 @@ textarea.wiki-edit
 .contextual
 {
 	font-size:.9em;
-	font-family:verdana
 }
 
 hr
