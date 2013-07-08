@@ -504,10 +504,16 @@ div.splitcontentleft h2
 	color:#666;
 	font-weight:700
 }
+
+/* The home link is redirected to my-page in the reverse proxy */
+#top-menu li a.home {
+	display: none;
+}
 #top-menu li a.home:before {
 	font-family: Fontawesome;
 	content: "\f015 ";	
 }
+
 #top-menu li a.my-page:before {
 	font-family: Fontawesome;
 	content: "\f0c9 ";	
