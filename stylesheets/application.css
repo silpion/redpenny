@@ -448,79 +448,67 @@ table.list tr.issue a
 	color:#333
 }
 
-tr.odd.priority-5,table.list tbody tr.odd.priority-5:hover
+tr.odd.priority-5,tr.odd.priority-5:hover
 {
 	color:#900;
 	font-weight:700
 }
-
 tr.odd.priority-5
 {
 	background:#ffc4c4
 }
-
-tr.even.priority-5,table.list tbody tr.even.priority-5:hover
+tr.even.priority-5,tr.even.priority-5:hover
 {
 	color:#900;
 	font-weight:700
 }
-
 tr.even.priority-5
 {
 	background:#ffd4d4
 }
-
 tr.priority-5 a,tr.priority-5:hover a
 {
 	color:#900
 }
-
 tr.odd.priority-5 td,tr.even.priority-5 td
 {
 	border-color:#ffb4b4
 }
 
-tr.odd.priority-4,table.list tbody tr.odd.priority-4:hover
+tr.odd.priority-4,tr.odd.priority-4:hover
 {
 	color:#900
 }
-
 tr.odd.priority-4
 {
 	background:#ffc4c4
 }
-
-tr.even.priority-4,table.list tbody tr.even.priority-4:hover
+tr.even.priority-4,tr.even.priority-4:hover
 {
 	color:#900
 }
-
 tr.even.priority-4
 {
 	background:#ffd4d4
 }
-
 tr.priority-4 a
 {
 	color:#900
 }
-
 tr.odd.priority-4 td,tr.even.priority-4 td
 {
 	border-color:#ffb4b4
 }
 
-tr.odd.priority-3,table.list tbody tr.odd.priority-3:hover
+tr.odd.priority-3,tr.odd.priority-3:hover
 {
 	color:#900
 }
-
 tr.odd.priority-3
 {
 	background:#fee
 }
-
-tr.even.priority-3,table.list tbody tr.even.priority-3:hover
+tr.even.priority-3,tr.even.priority-3:hover
 {
 	color:#900
 }
@@ -529,42 +517,35 @@ tr.even.priority-3
 {
 	background:#fff2f2
 }
-
 tr.priority-3 a
 {
 	color:#900
 }
-
 tr.odd.priority-3 td,tr.even.priority-3 td
 {
 	border-color:#fcc
 }
 
-tr.odd.priority-1,table.list tbody tr.odd.priority-1:hover
+tr.odd.priority-1,tr.odd.priority-1:hover
 {
 	color:#559
 }
-
 tr.odd.priority-1
 {
 	background:#eaf7ff
 }
-
-tr.even.priority-1,table.list tbody tr.even.priority-1:hover
+tr.even.priority-1,tr.even.priority-1:hover
 {
 	color:#559
 }
-
 tr.even.priority-1
 {
 	background:#f2faff
 }
-
 tr.priority-1 a
 {
 	color:#559
 }
-
 tr.odd.priority-1 td,tr.even.priority-1 td
 {
 	border-color:#add7f3
